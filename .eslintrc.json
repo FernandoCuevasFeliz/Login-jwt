@@ -1,0 +1,30 @@
+{
+  "env": {
+    "es2020": true,
+    "node": true
+  },
+  "extends": ["airbnb-base"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "no-console": "off",
+    "comma-dangle": "off",
+    "import/extensions": "off",
+    "object-curly-newline": "off",
+    "prefer-arrow-callback": "off",
+    "operator-linebreak": "off"
+  },
+
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "path": ["/src"],
+        "extensions": [".ts"]
+      }
+    }
+  }
+}
